@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<head> 
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.8.0"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="diseno.css">
+    <script src="main2.js"></script>
+    <script type="text/javascript">
+        
+        $(window).on('load', function () {
+            var timestamp = new Date().getTime();
+            $(".loader").css("background-image", "url('imagenes/loading-gif.gif?t=" + timestamp + "')");
+            setTimeout(function () {
+                $(".loader").hide();
+            }, 5400);
+        });
+    </script>
+    <title>Clasificador de frutas</title>
+</head>    
+<body>
+  <canvas id="matrix"></canvas>
+    <div class="loader"></div>
+    <center>
+    <div class="cabeza"><h1>Clasificador de frutas</h1></div>
+    <br>
+    <br>
+    <nav>
+    <a href="index.html">Inicio</a>
+    <a href="servicio.html">Servicios</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+  <br>
+  <br>
+  <div class="contactos">
+    <center><h2>Materiales que se usaron</h2></center>
+
+    <div class="galeria">
+
+      <div class="integrante2">
+        <div class="info-texto">
+          <a href="https://www.kaggle.com/datasets/moltean/fruits">Fruits360 Dataset Kaggle</a>
+          <br>
+          <a href="https://omes-va.com/tu-primera-red-neuronal-entrenala-paso-a-paso-con-mnist-tensorflow-y-google-colab/">“Tu primera red neuronal: Entrénala paso a paso con MNIST, TensorFlow y Google Colab” </a>
+          <br>
+          <a href="https://www.tensorflow.org/">TensorFlow Documentation</a>
+          <br>
+          <a href="https://openai.com/es-419/index/chatgpt/">ChatGPT – Asistencia técnica y optimización del código durante el desarrollo del modelo</a>
+          <br>
+          <a href="https://jquery.com/">Librerias JQuery</a>
+          <br>
+          <a href="https://www.youtube.com/@RingaTech">Ringa Tech - Youtuber</a>
+        </div>
+      </div>
+  </div>
+  </div>
+   </center>
+</body>
+</html>
